@@ -1,0 +1,16 @@
+.Square {
+  height: 100px;
+  width: 100px;
+  border: solid black 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Square-black {
+    background-color: #FFECC2;
+}
+
+.Square-white{
+    background-color: #D2B48C;
+}
