@@ -4,16 +4,18 @@ import React from 'react';
 interface PawnProps {
     color: string;
     location?: string;
+    selected?: boolean;
+    name: string;
+    isMoved: boolean;
 }
 
-const Pawn = ({ color, location }: PawnProps) => {
+const Pawn = ({ color, location, selected, name, isMoved}: PawnProps) => {
 
-    const handleMove = () => {
-        location = "e6"     
+    if (selected) {
     }
 
     return (
-        <div onClick={handleMove}>
+        <div >
             Pawn 
         </div>
     );

@@ -12,9 +12,14 @@ interface SquareProps {
 }
 
 const Square = ({ color, location, gameState, setGameState, clicked, setClicked }: SquareProps) => {
+    let selected = false;
 
     const handleClick = () => {
-        setClicked([clicked[1], location])
+        if (gameState[location].piece) {
+            if (gameState[location].piece.props.name === "pawn") {}
+            console.log(gameState[location].piece.props.name)
+        }
+         setClicked([clicked[1], location])
     }
     
     if (gameState && gameState[location].clicked) color = "red"
